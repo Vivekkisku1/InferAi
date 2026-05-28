@@ -1,0 +1,106 @@
+# Environment & secrets — never commit
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+*.egg-info/
+.eggs/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+
+# Node / frontend
+node_modules/
+dist-ssr/
+*.local
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# OS & editors
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.suo
+*.sw?
+
+# Cursor — temp/cache only
+.cursor/cache/
+.cursor/logs/
+.cursor/tmp/
+
+# AI / ML — model weights
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+*.bin
+
+# AI / ML — datasets
+datasets/
+data/
+training_data/
+uploads/
+
+# HuggingFace cache
+.cache/huggingface/
+huggingface/
+
+# Docker / infra
+volumes/
+tmp/
+temp/
+*.db
+postgres_data/
+
+# Kubernetes secrets
+*.kubeconfig
+kubeconfig.yaml
+secrets.yml
+
+# Terraform
+*.tfstate
+*.tfstate.backup
+.terraform/
+
+# Monitoring / observability
+grafana-data/
+prometheus-data/
+loki-data/
+
+# Security — never commit keys or tokens
+id_rsa
+id_rsa.pub
+authorized_keys
+*.token
+tokens.json
+
+# Build outputs
+coverage/
+.cache/
+target/
+out/
+release/
+debug/

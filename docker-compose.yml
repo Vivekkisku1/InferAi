@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15
+    environment:
+      POSTGRES_USER: inferenceuser
+      POSTGRES_PASSWORD: inferencepass
+      POSTGRES_DB: inferencedb
+    ports:
+      - "5432:5432"
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
